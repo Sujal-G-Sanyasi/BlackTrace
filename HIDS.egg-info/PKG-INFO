@@ -9,5 +9,7 @@ Requires-Dist: matplotlib
 Requires-Dist: seaborn
 Requires-Dist: plotly
 Requires-Dist: scikit-learn
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
 Dynamic: author
 Dynamic: requires-dist

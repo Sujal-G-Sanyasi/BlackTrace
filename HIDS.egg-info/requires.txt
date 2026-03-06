@@ -5,3 +5,5 @@ matplotlib
 seaborn
 plotly
 scikit-learn
+fastapi
+uvicorn

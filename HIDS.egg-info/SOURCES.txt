@@ -5,6 +5,7 @@ HIDS.egg-info/dependency_links.txt
 HIDS.egg-info/requires.txt
 HIDS.egg-info/top_level.txt
 Intrusion/__init__.py
-Intrusion/data_ingestion/__init__.py
 Intrusion/scapy/__init__.py
+Intrusion/scapy/packets.py
 Intrusion/sliding_window/__init__.py
+Intrusion/sliding_window/feature_extraction.py

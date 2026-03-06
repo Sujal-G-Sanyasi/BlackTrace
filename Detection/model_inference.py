@@ -36,7 +36,7 @@ def model_testing():
     while True:
         time.sleep(1)
 
-        feature_vec = fex.latest_feature_vector.drop(columns='timestamp')
+        feature_vec = fex.latest_feature_vector.drop(columns=['timestamp', 'top_ip'])
 
         if feature_vec is None:
             print("Waiting..........")
@@ -44,9 +44,16 @@ def model_testing():
         
         pred = model.predict(feature_vec)
         decision_score = model.decision_function(feature_vec)
+        
+        # Get attacker IP from latest feature vector
+        attacker_ip = fex.latest_feature_vector['top_ip'].iloc[0] if 'top_ip' in fex.latest_feature_vector.columns else "Unknown"
 
         print(anomaly_tagger(pred))
         print(decisionBoundary(decision_score))
+        
+        # Display attacker IP when anomaly is detected
+        if pred[0] == -1 and attacker_ip != "None":
+            print(f"Potential Attacker IP: {attacker_ip}")
 
 model_testing()
 
