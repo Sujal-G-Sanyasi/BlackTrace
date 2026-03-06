@@ -1,0 +1,10 @@
+setup.py
+HIDS.egg-info/PKG-INFO
+HIDS.egg-info/SOURCES.txt
+HIDS.egg-info/dependency_links.txt
+HIDS.egg-info/requires.txt
+HIDS.egg-info/top_level.txt
+Intrusion/__init__.py
+Intrusion/data_ingestion/__init__.py
+Intrusion/scapy/__init__.py
+Intrusion/sliding_window/__init__.py

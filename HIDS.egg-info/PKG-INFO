@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: HIDS
+Version: 1.0.0
+Author: Sujal G Sanyasi
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scapy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: requires-dist
